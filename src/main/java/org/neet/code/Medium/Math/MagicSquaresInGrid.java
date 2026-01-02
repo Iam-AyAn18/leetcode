@@ -25,8 +25,6 @@
  * - 0 <= grid[i][j] <= 15
  */
 
-package org.neet.code.slidingWindow;
-
 public class MagicSquaresInGrid {
 
 
