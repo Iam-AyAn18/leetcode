@@ -34,7 +34,7 @@ package org.neet.code.Easy.array;
 import java.util.HashMap;
 import java.util.HashSet;
 
-public class NRepeatedElement961 {
+public class NRepeatedElement {
     public static int repeatedNTimes(int[] nums) {
 
         HashMap<Integer, Integer> map = new HashMap<>();
