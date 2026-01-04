@@ -47,13 +47,15 @@ public class FourDivisors1390 {
     private int countDiv(int num) {
         if (num <= 1) return 0;
         HashSet<Integer> sets = new HashSet<>();
+        sets.add(num);
         for (int i = 1; i <= Math.sqrt(num); i++) {
             if (num % i == 0) {
                 sets.add(i);
                 sets.add(num / i);
             }
+            if(sets.size()>4)
+                return 0;
         }
-        sets.add(num);
         int sum = 0;
         if (sets.size() == 4) {
             for (int set : sets) {
