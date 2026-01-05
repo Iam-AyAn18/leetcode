@@ -31,7 +31,7 @@ package org.neet.code.Medium.Matrix;/*
  * NOTE: This file intentionally contains only the problem statement and a method stub (no solution), per request.
  */
 
-public class MaximumMatrixSum1975 {
+public class MaximumMatrixSum {
 
     /**
      * Returns the maximum possible sum of all matrix elements after performing the allowed operation any number of times.
@@ -72,7 +72,7 @@ public class MaximumMatrixSum1975 {
     }
 
     public static void main(String[] args) {
-        MaximumMatrixSum1975 sol = new MaximumMatrixSum1975();
+        MaximumMatrixSum sol = new MaximumMatrixSum();
 
         int[][] example1 = {{1, -1}, {-1, 1}};
         System.out.println("Example1 (expected 4): " + sol.maxMatrixSum(example1));

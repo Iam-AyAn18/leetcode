@@ -27,7 +27,7 @@ import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 
-public class FourDivisors1390 {
+public class FourDivisors {
 
     /**
      * Returns the sum of divisors for numbers in nums that have exactly four divisors.
@@ -66,7 +66,7 @@ public class FourDivisors1390 {
     }
 
     public static void main(String[] args) {
-        FourDivisors1390 sol = new FourDivisors1390();
+        FourDivisors sol = new FourDivisors();
 
         int[] example1 = {21, 4, 7};
         System.out.println("Example1 (expected 32): " + sol.sumFourDivisors(example1));
