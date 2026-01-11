@@ -48,7 +48,7 @@ public class TwoSum {
                 result[1] = i;
                 return result;
             }
-            map.put(nums[i], c++);
+            map.put(nums[i], i);
         }
         return new int[]{};
     }
