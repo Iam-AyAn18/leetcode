@@ -30,7 +30,7 @@ package org.neet.code.Medium.Tree;
 import java.util.ArrayDeque;
 import java.util.Queue;
 
-public class MaximumLevelSumOfBinaryTree1161 {
+public class MaximumLevelSumOfBinaryTree {
     // Definition for a binary tree node.
     public static class TreeNode {
         int val;
@@ -90,7 +90,7 @@ public class MaximumLevelSumOfBinaryTree1161 {
                 ),
                 new TreeNode(0)
         );
-        MaximumLevelSumOfBinaryTree1161 sol = new MaximumLevelSumOfBinaryTree1161();
+        MaximumLevelSumOfBinaryTree sol = new MaximumLevelSumOfBinaryTree();
         System.out.println("Example1 (expected 2): " + sol.maxLevelSum(root1));
 
         // Example 2: root = [989,null,10250,98693,-89388,null,null,null,-32127]
