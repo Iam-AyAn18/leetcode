@@ -1,3 +1,5 @@
+package org.neet.code.Medium.Math;
+
 /*
  * 840. Magic Squares In Grid
  * Medium
