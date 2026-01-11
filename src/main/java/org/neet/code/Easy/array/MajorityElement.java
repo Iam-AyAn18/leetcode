@@ -29,27 +29,23 @@ package org.neet.code.Easy.array;
 import java.util.Arrays;
 
 public class MajorityElement {
-    public static int majorityElement(int[] nums) {
+    public static int majorityElement2(int[] nums) {
         nums = Arrays.stream(nums).sorted().toArray();
         return nums[nums.length/2];
     }
 
-    // Boyer-Moore Voting Algorithm (O(n) time, O(1) space)
-    public static int majorityElement2(int[] nums) {
-
-        int count =0, n=0;
-
+    public static int majorityElement(int[] nums) {
+        int count =0, candidate = 0;
         for(int num : nums)
         {
-             if(count==0)
-             {
-                 n = num;
-             }
-             count+= (n==num) ? 1 : -1;
-
+            if(count == 0)
+                candidate = num;
+            count += (num == candidate ? 1 : -1);
         }
-        return n;
+        return candidate;
     }
+
+    // Boyer-Moore Voting Algorithm (O(n) time, O(1) space)
 
     public static void main(String[] args) {
         int[] nums1 = {3, 2, 3};
