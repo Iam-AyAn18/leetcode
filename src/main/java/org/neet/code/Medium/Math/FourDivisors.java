@@ -47,7 +47,6 @@ public class FourDivisors {
     private int countDiv(int num) {
         if (num <= 1) return 0;
         HashSet<Integer> sets = new HashSet<>();
-        sets.add(num);
         for (int i = 1; i <= Math.sqrt(num); i++) {
             if (num % i == 0) {
                 sets.add(i);
